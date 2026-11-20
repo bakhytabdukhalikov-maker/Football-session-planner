@@ -1,5 +1,9 @@
 # Football Session Planner
 
+**Live demo:** https://football-session-planner.streamlit.app/
+
+> The backend runs on Render's free tier, so the first request after a quiet period can take up to a minute while the server wakes up.
+
 AI-assisted football training session planner. A coach or player enters the
 age group, number of players, session length, focus, equipment and space, and
 gets a complete session (warm-up, main part, game, cool-down) with a PDF export.
