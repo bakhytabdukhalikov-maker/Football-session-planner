@@ -1,0 +1,897 @@
+{
+  "version": 1,
+  "drills": [
+    {
+      "id": "fifa_11plus",
+      "name": "FIFA 11+ Warm-Up",
+      "modes": ["team", "individual"],
+      "phases": ["warm_up"],
+      "focus": ["injury_prevention", "agility", "coordination"],
+      "trains": ["physical"],
+      "age_min": "U14",
+      "intensity": "medium",
+      "players": { "min": 1, "ideal": 12, "max": 30, "parallel_groups": true },
+      "equipment": ["cones"],
+      "space": { "length_m": 30, "width_m": 15, "scalable": true },
+      "duration": { "min": 15, "default": 20, "max": 20 },
+      "work_rest": "Continuous, about 20 minutes",
+      "description": "Structured injury-prevention warm-up in three parts. Part 1: running exercises at slow speed with active stretching and controlled partner contacts. Part 2: strength, plyometric and balance exercises (e.g. plank, side plank, Nordic hamstrings, single-leg balance, squats, jumps), each with three difficulty levels. Part 3: running at moderate to high speed with planting and cutting movements.",
+      "coaching_points": [
+        "Knees stay in line with the toes on every landing and squat, never caving inwards",
+        "Land softly on the balls of the feet",
+        "Keep the trunk stable and upright",
+        "Quality over speed: technique first, then increase level"
+      ],
+      "progressions": ["Move to level 2 or 3 of each Part 2 exercise", "Increase running speed in Part 3"],
+      "regressions": ["Stay on level 1 exercises", "Fewer repetitions in Part 2"],
+      "attribution": {
+        "inspired_by": "FIFA 11+ injury-prevention warm-up programme, developed by FIFA's medical research centre (F-MARC) together with sports-medicine research partners",
+        "level": "documented",
+        "reference": "FIFA 11+ manual (FIFA Medical)"
+      }
+    },
+    {
+      "id": "fifa_11plus_kids",
+      "name": "FIFA 11+ Kids Warm-Up",
+      "modes": ["team", "individual"],
+      "phases": ["warm_up"],
+      "focus": ["injury_prevention", "coordination", "agility"],
+      "trains": ["physical"],
+      "age_min": "U10",
+      "age_max": "U12",
+      "intensity": "low",
+      "players": { "min": 1, "ideal": 12, "max": 30, "parallel_groups": true },
+      "equipment": ["cones"],
+      "equipment_optional": ["balls"],
+      "space": { "length_m": 20, "width_m": 15, "scalable": true },
+      "duration": { "min": 15, "default": 15, "max": 20 },
+      "work_rest": "Continuous, about 15 minutes",
+      "description": "Playful injury-prevention warm-up designed for children. Short exercises that train balance, body control, jumping and landing, and safe falling technique, each with progression levels so children are challenged as they improve.",
+      "coaching_points": [
+        "Make it fun and keep everyone moving",
+        "Soft landings with knees over toes",
+        "Praise good body control, not just speed"
+      ],
+      "progressions": ["Move to the next level of each exercise"],
+      "regressions": ["Stay on the first level", "Demonstrate each exercise slowly"],
+      "attribution": {
+        "inspired_by": "FIFA 11+ Kids, FIFA's injury-prevention warm-up programme for children",
+        "level": "documented",
+        "reference": "FIFA 11+ Kids manual (FIFA Medical)"
+      }
+    },
+    {
+      "id": "rondo_4v2",
+      "name": "4v2 Rondo",
+      "modes": ["team"],
+      "phases": ["warm_up", "main"],
+      "focus": ["possession", "passing_under_pressure", "positional_play", "first_touch", "pressing"],
+      "trains": ["technical", "tactical", "cognitive"],
+      "age_min": "U10",
+      "intensity": "medium",
+      "players": { "min": 6, "ideal": 6, "max": 12, "parallel_groups": true, "note": "Run several rondos side by side for bigger groups" },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["bibs"],
+      "space": { "length_m": 10, "width_m": 10, "scalable": true },
+      "duration": { "min": 8, "default": 12, "max": 20 },
+      "work_rest": "3 x 3 min, 1 min rest",
+      "description": "Four attackers keep possession on the outside of a square against two defenders inside. When a defender wins the ball or forces an error, they swap with the attacker who lost it.",
+      "coaching_points": [
+        "Open body shape before receiving",
+        "Play to the foot away from pressure",
+        "Always give the player on the ball two passing options",
+        "Defenders press as a pair: one presses the ball, one cuts the passing line"
+      ],
+      "progressions": ["Two-touch limit", "A split pass between the defenders earns a point", "Shrink the square"],
+      "regressions": ["Bigger square", "Unlimited touches", "5v2"],
+      "attribution": {
+        "inspired_by": "Positional-play rondo, a staple of the Ajax/Barcelona tradition shaped by Johan Cruyff's influence",
+        "level": "general"
+      }
+    },
+    {
+      "id": "passing_pattern_y",
+      "name": "Y-Shape Passing Pattern",
+      "modes": ["team"],
+      "phases": ["warm_up"],
+      "focus": ["passing", "first_touch", "technique"],
+      "trains": ["technical"],
+      "age_min": "U12",
+      "intensity": "low",
+      "players": { "min": 6, "ideal": 8, "max": 16, "parallel_groups": true },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["mannequins", "poles"],
+      "space": { "length_m": 30, "width_m": 20, "scalable": true },
+      "duration": { "min": 8, "default": 10, "max": 15 },
+      "work_rest": "2 x 4 min (one each direction), 1 min rest",
+      "description": "Cones form a Y: a start cone, a central cone about 12 m ahead and two wide cones diagonally beyond it. A passes into B at the central cone, B lays the ball back, A plays first time to C at a wide cone, and C receives across the body and dribbles back to the start. Players follow their pass. Alternate left and right sides.",
+      "coaching_points": [
+        "Pass firmly along the ground to the correct foot",
+        "Check away before showing for the ball",
+        "Receive across the body with the back foot",
+        "Communicate: call for the ball and tell the receiver 'turn' or 'man on'"
+      ],
+      "progressions": ["One-touch where possible", "Add a third-man run from B after the lay-off", "Increase tempo"],
+      "regressions": ["Two touches everywhere", "Shorter distances"],
+      "attribution": {
+        "inspired_by": "Pattern-passing warm-up of a type common in professional and academy pre-training routines",
+        "level": "general"
+      }
+    },
+    {
+      "id": "positional_game_4v4_3",
+      "name": "Positional Game 4v4+3",
+      "modes": ["team"],
+      "phases": ["main"],
+      "focus": ["positional_play", "possession", "passing_under_pressure", "build_up", "scanning"],
+      "trains": ["tactical", "technical", "cognitive"],
+      "age_min": "U14",
+      "intensity": "medium",
+      "players": { "min": 11, "ideal": 11, "max": 14, "note": "4v4 plus 3 neutral players; extra players rotate in" },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["bibs"],
+      "space": { "length_m": 30, "width_m": 25, "scalable": true },
+      "duration": { "min": 12, "default": 16, "max": 24 },
+      "work_rest": "4 x 3 min, 1 min rest",
+      "description": "Two teams of four play inside a rectangle. Three neutral players (one on each end line and one in the centre) always play for the team in possession, creating a 7v4 overload. A team scores a point by moving the ball from one end player to the other via the central neutral.",
+      "coaching_points": [
+        "Create triangles and diamonds around the ball",
+        "Find the free player: who is between the lines?",
+        "Scan before receiving and open the body to play forward",
+        "Pass speed: firm passes stop defenders shifting in time"
+      ],
+      "progressions": ["Neutrals limited to one touch", "Bigger reward for end-to-end without the ball going backwards"],
+      "regressions": ["Bigger area", "Unlimited touches for neutrals"],
+      "attribution": {
+        "inspired_by": "Positional games (juego de posicion) associated with Pep Guardiola's teams and the Barcelona positional-play tradition",
+        "level": "general"
+      }
+    },
+    {
+      "id": "counterpress_transition_game",
+      "name": "Win It Back: Counter-Press Transition Game",
+      "modes": ["team"],
+      "phases": ["main", "game"],
+      "focus": ["counter_pressing", "pressing", "transitions"],
+      "trains": ["tactical", "physical"],
+      "age_min": "U14",
+      "intensity": "high",
+      "players": { "min": 8, "ideal": 10, "max": 16 },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["bibs", "mini_goals"],
+      "space": { "length_m": 30, "width_m": 25, "scalable": true },
+      "duration": { "min": 12, "default": 16, "max": 24 },
+      "work_rest": "4 x 3 min, 90 s rest",
+      "description": "Small-sided game (e.g. 5v5) with mini goals or cone goals. A team that loses the ball earns a bonus point if it wins it back within 5 seconds. The coach counts the seconds out loud.",
+      "coaching_points": [
+        "Nearest player presses the ball immediately",
+        "Teammates close the passing lanes around the ball",
+        "Stay compact while you have the ball so you are ready to counter-press",
+        "If you can't win it back in about 5 seconds, drop and reorganise"
+      ],
+      "progressions": ["Double points for scoring within 10 s of winning the ball back", "Smaller pitch"],
+      "regressions": ["Bigger pitch", "Add a neutral player for the team in possession", "Longer rest"],
+      "attribution": {
+        "inspired_by": "Counter-pressing (gegenpressing) principles widely associated with Jurgen Klopp's Dortmund and Liverpool teams and the '5-second rule' reported from Guardiola's Barcelona",
+        "level": "general"
+      }
+    },
+    {
+      "id": "pressing_triggers_6v4",
+      "name": "Pressing on Triggers 6v4",
+      "modes": ["team"],
+      "phases": ["main"],
+      "focus": ["pressing", "defending", "transitions"],
+      "trains": ["tactical", "physical", "cognitive"],
+      "age_min": "U14",
+      "intensity": "high",
+      "players": { "min": 10, "ideal": 10, "max": 14, "note": "Extra players rotate into the pressing group" },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["bibs", "mini_goals"],
+      "space": { "length_m": 40, "width_m": 30, "scalable": true },
+      "duration": { "min": 12, "default": 15, "max": 20 },
+      "work_rest": "5 x 2 min, 1 min rest (rotate pressers)",
+      "description": "Six players in possession try to pass the ball into an end zone. Four pressers wait in a compact mid-block and only press together when a trigger happens: a back pass, a poor touch, a pass towards the sideline, or a receiver facing their own goal. If the pressers win the ball, they have 8 seconds to score in mini goals or cone goals.",
+      "coaching_points": [
+        "Stay compact and patient until the trigger",
+        "Press together: one goes, everyone shifts",
+        "Curve the run to cut off the pass back or across",
+        "Use the sideline as an extra defender"
+      ],
+      "progressions": ["Reduce possession team to 5", "Pressers only get 5 s to score after winning the ball"],
+      "regressions": ["Possession team limited to two touches", "Bigger area for the possession team"],
+      "attribution": {
+        "inspired_by": "Trigger-based pressing, a core principle of modern high-pressing teams, associated with coaches such as Ralf Rangnick and Jurgen Klopp and widely taught in German coaching",
+        "level": "general"
+      }
+    },
+    {
+      "id": "build_up_vs_press",
+      "name": "Build-Up From the Back vs Press",
+      "modes": ["team"],
+      "phases": ["main"],
+      "focus": ["build_up", "positional_play", "passing_under_pressure", "scanning"],
+      "trains": ["tactical", "technical", "cognitive"],
+      "age_min": "U14",
+      "intensity": "medium",
+      "players": { "min": 10, "ideal": 11, "max": 14, "note": "GK + 4 defenders + 1 defensive midfielder vs 4 pressers; extras rotate" },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["full_goals", "bibs"],
+      "space": { "length_m": 50, "width_m": 45, "scalable": true },
+      "duration": { "min": 12, "default": 16, "max": 24 },
+      "work_rest": "4 x 4 min, 1 min rest",
+      "description": "In a half pitch, the goalkeeper, four defenders and a defensive midfielder build up from the goalkeeper against four pressers. The build-up team scores by passing or dribbling through one of three gates on the halfway line. If the pressers win the ball they attack the goal (or the end line if there's no goal). Every attack restarts from the goalkeeper.",
+      "coaching_points": [
+        "Centre-backs split wide, full-backs push up to stretch the press",
+        "The 6 scans and offers in the gaps between pressers",
+        "Draw the presser before passing to free a teammate",
+        "If no option: play long or reset to the goalkeeper"
+      ],
+      "progressions": ["Add a fifth presser", "Gates get smaller"],
+      "regressions": ["Pressers start further back", "Only three pressers"],
+      "attribution": {
+        "inspired_by": "Building up from the goalkeeper against a press, characteristic of positional-play coaches such as Pep Guardiola and Roberto De Zerbi and now standard in academy coaching",
+        "level": "general"
+      }
+    },
+    {
+      "id": "waves_3v2_2v1",
+      "name": "Transition Waves 3v2 to 2v1",
+      "modes": ["team"],
+      "phases": ["main"],
+      "focus": ["transitions", "finishing", "1v1", "defending"],
+      "trains": ["tactical", "physical", "technical"],
+      "age_min": "U12",
+      "intensity": "high",
+      "players": { "min": 8, "ideal": 10, "max": 16, "note": "Groups wait at each end line" },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["full_goals", "mini_goals"],
+      "space": { "length_m": 35, "width_m": 30, "scalable": true },
+      "duration": { "min": 12, "default": 15, "max": 20 },
+      "work_rest": "Continuous waves for 3 x 4 min, 1 min rest",
+      "description": "Three attackers attack two defenders towards a goal. When the attack ends (goal, save or ball out), the two defenders immediately attack the other way 2v1 against a defender who steps in from the far end line. Continuous waves.",
+      "coaching_points": [
+        "Attack the space quickly before defenders recover",
+        "Ball carrier commits a defender, then releases",
+        "Width and depth in the 3v2",
+        "Defenders: delay, stay goal-side, show the attacker away from goal"
+      ],
+      "progressions": ["Time limit of 8 s per attack", "Recovering defender chases from behind"],
+      "regressions": ["4v2", "Bigger area"],
+      "attribution": {
+        "inspired_by": "Overload 'waves' (3v2 then 2v1), a classic transition exercise in coaching curricula worldwide",
+        "level": "general"
+      }
+    },
+    {
+      "id": "crossing_finishing_box_runs",
+      "name": "Crossing & Finishing With Box Runs",
+      "modes": ["team"],
+      "phases": ["main"],
+      "focus": ["crossing", "finishing"],
+      "trains": ["technical", "tactical"],
+      "age_min": "U12",
+      "intensity": "medium",
+      "players": { "min": 6, "ideal": 8, "max": 14, "note": "Rotate wingers and runners; a goalkeeper is ideal" },
+      "equipment": ["balls", "cones", "full_goals"],
+      "equipment_optional": ["mannequins"],
+      "space": { "length_m": 35, "width_m": 50, "scalable": false },
+      "duration": { "min": 12, "default": 15, "max": 20 },
+      "work_rest": "Alternate sides; about 12-15 reps per player",
+      "description": "A winger receives wide, beats a cone or mannequin and crosses. Two runners attack the near post and far post while a third player arrives at the cut-back zone around the penalty spot. Alternate sides. Add a defender later.",
+      "coaching_points": [
+        "Runners time their runs and arrive, don't wait in the box",
+        "Near post: attack the ball at pace; far post: hold the run late",
+        "Winger looks up before crossing and picks the right zone",
+        "First-time finishes: side-foot for placement"
+      ],
+      "progressions": ["Add one or two defenders", "Time limit from first touch to finish"],
+      "regressions": ["Crosses from a static position", "Only two runners"],
+      "attribution": {
+        "inspired_by": "Crossing and finishing pattern with structured box runs (near post, far post, cut-back zone), standard in professional finishing sessions",
+        "level": "general"
+      }
+    },
+    {
+      "id": "combination_finishing",
+      "name": "Combination Play & Finish",
+      "modes": ["team"],
+      "phases": ["main"],
+      "focus": ["finishing", "passing", "positional_play"],
+      "trains": ["technical", "tactical"],
+      "age_min": "U12",
+      "intensity": "medium",
+      "players": { "min": 4, "ideal": 6, "max": 12, "note": "Two lines; rotate roles each rep" },
+      "equipment": ["balls", "cones", "full_goals"],
+      "equipment_optional": ["mannequins"],
+      "space": { "length_m": 30, "width_m": 40, "scalable": true },
+      "duration": { "min": 10, "default": 15, "max": 20 },
+      "work_rest": "Continuous reps for 3 x 4 min, 1 min rest",
+      "description": "A midfielder passes into a striker at the edge of the box. The striker lays the ball off (wall pass, or to a third player arriving) and the receiver finishes first time. Vary the combination each round: one-two, lay-off and third-man run.",
+      "coaching_points": [
+        "Striker shows short with the body half-open",
+        "Lay-off firm and into the runner's stride",
+        "Third player times the run so they arrive as the lay-off is played",
+        "Finish early and low"
+      ],
+      "progressions": ["Passive then active defender on the striker", "Two-touch limit for the whole move"],
+      "regressions": ["Remove the third player", "Finisher may take a touch"],
+      "attribution": {
+        "inspired_by": "Combination-play finishing patterns (wall pass, lay-off, third-man run) common in academy finishing work; the third-man run is a hallmark of positional play",
+        "level": "general"
+      }
+    },
+    {
+      "id": "funino_3v3",
+      "name": "FUNino 3v3 (Four Goals)",
+      "modes": ["team"],
+      "phases": ["game"],
+      "focus": ["dribbling", "1v1", "finishing", "transitions"],
+      "trains": ["technical", "tactical", "cognitive"],
+      "age_min": "U10",
+      "age_max": "U12",
+      "intensity": "medium",
+      "players": { "min": 6, "ideal": 8, "max": 16, "parallel_groups": true, "note": "Substitutes rotate in after every goal" },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["mini_goals"],
+      "space": { "length_m": 32, "width_m": 25, "scalable": true },
+      "duration": { "min": 12, "default": 15, "max": 25 },
+      "work_rest": "Games of 3-4 min with rotation",
+      "description": "3v3 with two small goals on each end line, set wide apart. Goals can only be scored from inside a scoring zone about 6 m in front of the goals. When one goal is defended, attack the other: this teaches players to look up and switch.",
+      "coaching_points": [
+        "Look up: which goal is open?",
+        "Dribble to commit a defender, then pass or switch",
+        "Spread out to create space",
+        "Win the ball back as a group"
+      ],
+      "progressions": ["Smaller scoring zone", "Goal after a switch counts double"],
+      "regressions": ["No scoring zone", "4v3 overload"],
+      "attribution": {
+        "inspired_by": "FUNino, the small-sided game format developed by German coach Horst Wein",
+        "level": "documented",
+        "reference": "Horst Wein, Developing Youth Football Players"
+      }
+    },
+    {
+      "id": "ssg_end_zone",
+      "name": "Small-Sided End-Zone Game",
+      "modes": ["team"],
+      "phases": ["game"],
+      "focus": ["possession", "transitions", "1v1", "dribbling", "passing_under_pressure"],
+      "trains": ["tactical", "technical", "physical"],
+      "age_min": "U10",
+      "intensity": "high",
+      "players": { "min": 6, "ideal": 10, "max": 16, "parallel_groups": true, "note": "3v3 up to 5v5 per pitch" },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["bibs"],
+      "space": { "length_m": 35, "width_m": 25, "scalable": true },
+      "duration": { "min": 12, "default": 16, "max": 24 },
+      "work_rest": "4 x 3 min, 1 min rest",
+      "description": "4v4 or 5v5 on a small pitch with a 5 m end zone at each end. A team scores by dribbling into the opponents' end zone or receiving a pass inside it.",
+      "coaching_points": [
+        "Play forward when you can, keep the ball when you can't",
+        "Make runs into the end zone behind the defence",
+        "React instantly when the ball is lost or won"
+      ],
+      "progressions": ["Only a received pass counts", "Reduce the end zone depth"],
+      "regressions": ["Add a neutral player", "Bigger pitch"],
+      "attribution": {
+        "inspired_by": "Small-sided games, a core part of modern youth development programmes worldwide",
+        "level": "general"
+      }
+    },
+    {
+      "id": "switch_play_game",
+      "name": "Overload & Switch Game",
+      "modes": ["team"],
+      "phases": ["main", "game"],
+      "focus": ["switching_play", "positional_play", "possession", "long_passing"],
+      "trains": ["tactical", "technical"],
+      "age_min": "U14",
+      "intensity": "medium",
+      "players": { "min": 12, "ideal": 14, "max": 18 },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["mini_goals", "bibs"],
+      "space": { "length_m": 50, "width_m": 45, "scalable": true },
+      "duration": { "min": 12, "default": 18, "max": 24 },
+      "work_rest": "3 x 5 min, 1.5 min rest",
+      "description": "6v6 (or 7v7) with two wide cone goals or mini goals on each end line. A goal counts double if the ball was switched from one side of the pitch to the other within the last three passes.",
+      "coaching_points": [
+        "Overload one side to draw the opponents across",
+        "The switch should be quick: as few passes as possible",
+        "Far-side player stays wide and ready",
+        "Receive the switch on the half-turn to attack immediately"
+      ],
+      "progressions": ["Goals only count after a switch", "Two-touch limit"],
+      "regressions": ["Bigger pitch", "Neutral player in the centre"],
+      "attribution": {
+        "inspired_by": "The 'overload to isolate' idea from positional play: overload one side to draw pressure, then switch to the free side",
+        "level": "general"
+      }
+    },
+    {
+      "id": "corners_attack_defend",
+      "name": "Corners: Attack vs Defend",
+      "modes": ["team"],
+      "phases": ["main"],
+      "focus": ["set_pieces", "finishing", "defending"],
+      "trains": ["tactical", "technical"],
+      "age_min": "U12",
+      "intensity": "medium",
+      "players": { "min": 10, "ideal": 14, "max": 22 },
+      "equipment": ["balls", "full_goals"],
+      "equipment_optional": ["cones", "bibs", "mannequins"],
+      "space": { "length_m": 35, "width_m": 50, "scalable": false },
+      "duration": { "min": 10, "default": 15, "max": 20 },
+      "work_rest": "Sets of 5 corners, then swap roles",
+      "description": "The attacking team practises two or three rehearsed corner movements (e.g. near-post run, far-post run, a screen to free a teammate, one player on the edge of the box for second balls) against defenders using zonal, man-to-man or mixed marking. Swap roles after each set.",
+      "coaching_points": [
+        "Each attacker knows their starting spot and run",
+        "Timing: start the run as the taker raises their arm",
+        "Defenders: first contact, then clear high and wide",
+        "Be alert for second balls"
+      ],
+      "progressions": ["Defending team counter-attacks to cone gates after a clearance", "Add short-corner options"],
+      "regressions": ["Unopposed walkthrough first", "Passive defenders"],
+      "attribution": {
+        "inspired_by": "Set-piece rehearsal as done by professional teams; zonal, man-to-man and mixed marking are the common defending systems. For younger players, follow your federation's guidance on heading",
+        "level": "general"
+      }
+    },
+    {
+      "id": "defending_1v1_channel",
+      "name": "1v1 Defending in a Channel",
+      "modes": ["team", "individual"],
+      "phases": ["main"],
+      "focus": ["1v1", "defending", "position_cb", "position_fullback", "position_cm_cdm"],
+      "trains": ["technical", "physical", "tactical"],
+      "age_min": "U10",
+      "intensity": "high",
+      "players": { "min": 2, "ideal": 6, "max": 16, "parallel_groups": true },
+      "needs_partner": true,
+      "equipment": ["balls", "cones"],
+      "space": { "length_m": 20, "width_m": 10, "scalable": true },
+      "duration": { "min": 8, "default": 12, "max": 15 },
+      "work_rest": "8-10 reps each, 30 s rest between reps",
+      "description": "The defender passes to the attacker at the other end of a narrow channel and closes them down. The attacker tries to dribble over the defender's end line. The defender wins by stopping the attacker or winning the ball.",
+      "coaching_points": [
+        "Close down fast, then slow down in the last few metres",
+        "Curved run to show the attacker onto their weaker side or the sideline",
+        "Low, side-on stance; stay on your toes",
+        "Be patient: tackle when the ball is away from the attacker's foot"
+      ],
+      "progressions": ["Narrower channel", "Attacker can score in either of two gates"],
+      "regressions": ["Wider channel", "Attacker at walking pace"],
+      "attribution": {
+        "inspired_by": "Fundamental 1v1 defending exercise found in most coaching curricula",
+        "level": "general"
+      }
+    },
+    {
+      "id": "conditioned_game",
+      "name": "Conditioned Game",
+      "modes": ["team"],
+      "phases": ["game"],
+      "focus": ["pressing", "counter_pressing", "build_up", "transitions", "possession", "positional_play", "switching_play", "finishing", "defending", "passing_under_pressure"],
+      "trains": ["tactical", "physical", "technical"],
+      "age_min": "U10",
+      "intensity": "high",
+      "players": { "min": 10, "ideal": 14, "max": 22 },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["full_goals", "bibs"],
+      "space": { "length_m": 50, "width_m": 40, "scalable": true },
+      "duration": { "min": 15, "default": 20, "max": 30 },
+      "work_rest": "2 x 10 min or 3 x 7 min",
+      "description": "A match with one rule that links to the session focus. Examples: a goal after winning the ball in the final third counts double (pressing); a goal within 10 s of winning the ball counts double (transitions); every outfield player must touch the ball before a goal counts (build-up); goals only count after a switch (switching play).",
+      "coaching_points": [
+        "Coach the session theme, not everything",
+        "Freeze play only for key moments, then let them play",
+        "Praise examples of the theme"
+      ],
+      "progressions": ["Make the condition stricter"],
+      "regressions": ["Free play for the last few minutes"],
+      "attribution": {
+        "inspired_by": "Conditioned (themed) game, a standard way to end a session so the main theme carries over into match play",
+        "level": "general"
+      }
+    },
+    {
+      "id": "cool_down_jog_stretch",
+      "name": "Cool-Down: Light Jog & Stretch",
+      "modes": ["team", "individual"],
+      "phases": ["cool_down"],
+      "focus": ["recovery"],
+      "trains": ["recovery"],
+      "age_min": "U10",
+      "intensity": "low",
+      "players": { "min": 1, "ideal": 12, "max": 30, "parallel_groups": true },
+      "equipment": [],
+      "space": { "length_m": 20, "width_m": 20, "scalable": true },
+      "duration": { "min": 5, "default": 10, "max": 15 },
+      "work_rest": "3-5 min easy jog or walk, then 20-30 s per stretch",
+      "description": "Easy jogging or walking to bring the heart rate down, then static stretches for calves, hamstrings, quads, hip flexors and groin, with relaxed breathing. Finish with a short debrief on the session theme.",
+      "coaching_points": [
+        "Keep it genuinely easy",
+        "Hold stretches gently, never bounce",
+        "Use the time to ask players what they learned"
+      ],
+      "progressions": ["Add foam rolling if available"],
+      "regressions": ["Walking only"],
+      "attribution": {
+        "inspired_by": "Standard low-intensity cool-down practice; the evidence that it prevents injuries is limited, but it helps players wind down and gives time for a debrief",
+        "level": "general"
+      }
+    },
+    {
+      "id": "cool_down_technical_passing",
+      "name": "Cool-Down: Easy Technical Passing",
+      "modes": ["team", "individual"],
+      "phases": ["cool_down"],
+      "focus": ["recovery", "passing", "technique"],
+      "trains": ["recovery", "technical"],
+      "age_min": "U10",
+      "intensity": "low",
+      "players": { "min": 1, "ideal": 12, "max": 30, "parallel_groups": true, "note": "In pairs, or alone against a wall" },
+      "equipment": ["balls"],
+      "equipment_optional": ["rebound_wall"],
+      "space": { "length_m": 15, "width_m": 10, "scalable": true },
+      "duration": { "min": 5, "default": 8, "max": 10 },
+      "work_rest": "Continuous, relaxed tempo",
+      "description": "Relaxed passing in pairs (or against a wall) at walking pace: two-touch inside foot, both feet, then gentle volleys and juggling passes.",
+      "coaching_points": [
+        "Low tempo: this is recovery",
+        "Clean technique with both feet"
+      ],
+      "progressions": ["Weaker foot only"],
+      "regressions": ["Shorter distance"],
+      "attribution": {
+        "inspired_by": "Low-intensity technical cool-down, a common way to end training with the ball",
+        "level": "general"
+      }
+    },
+    {
+      "id": "ball_mastery_sequence",
+      "name": "Ball Mastery Sequence",
+      "modes": ["individual", "team"],
+      "phases": ["warm_up", "main"],
+      "focus": ["ball_mastery", "technique", "coordination", "dribbling"],
+      "trains": ["technical", "cognitive"],
+      "age_min": "U10",
+      "intensity": "low",
+      "players": { "min": 1, "ideal": 1, "max": 30, "parallel_groups": true, "note": "One ball per player" },
+      "equipment": ["balls", "cones"],
+      "space": { "length_m": 10, "width_m": 10, "scalable": true },
+      "duration": { "min": 8, "default": 12, "max": 20 },
+      "work_rest": "30-40 s per move, 15 s rest, both feet",
+      "description": "In a small grid, perform continuous ball-mastery moves: toe taps, sole rolls, inside-outside touches, pull-backs, V-moves, Cruyff turns and step-overs. Start slow and clean, then speed up while keeping control.",
+      "coaching_points": [
+        "Light touches on the balls of the feet",
+        "Head up between touches",
+        "Equal work for both feet",
+        "Speed only after technique is clean"
+      ],
+      "progressions": ["Combine moves into a sequence", "Coach calls the move", "Move around a grid with other players"],
+      "regressions": ["Fewer moves", "Slower tempo"],
+      "attribution": {
+        "inspired_by": "Ball-mastery repetition inspired by the Coerver Coaching methodology founded on Wiel Coerver's ideas",
+        "level": "general"
+      }
+    },
+    {
+      "id": "coordination_ladder_to_ball",
+      "name": "Coordination Ladder Into Ball Action",
+      "modes": ["individual", "team"],
+      "phases": ["warm_up", "main"],
+      "focus": ["coordination", "agility", "first_touch"],
+      "trains": ["physical", "technical"],
+      "age_min": "U10",
+      "intensity": "medium",
+      "players": { "min": 1, "ideal": 4, "max": 16, "parallel_groups": true },
+      "equipment": ["balls", "cones", "ladder"],
+      "equipment_optional": ["hurdles", "poles"],
+      "space": { "length_m": 20, "width_m": 10, "scalable": true },
+      "duration": { "min": 8, "default": 10, "max": 15 },
+      "work_rest": "8-10 runs, walk back recovery",
+      "description": "A footwork pattern through the ladder (two feet in each square, lateral steps, in-in-out-out), then straight away control a ball (passed in by a partner, or placed at the end) and dribble through a cone gate.",
+      "coaching_points": [
+        "Quick, light feet; arms working",
+        "Stay balanced coming out of the ladder",
+        "First touch out of the feet into space"
+      ],
+      "progressions": ["Coach calls the gate (left/right) at the exit", "Receive an aerial ball"],
+      "regressions": ["Simpler footwork pattern", "Ball stationary at the exit"],
+      "attribution": {
+        "inspired_by": "Coordination-to-ball-action work, a common part of modern academy athletic-technical warm-ups",
+        "level": "general"
+      }
+    },
+    {
+      "id": "half_turn_scan_receive",
+      "name": "Scan & Receive on the Half-Turn",
+      "modes": ["individual"],
+      "phases": ["main"],
+      "focus": ["scanning", "first_touch", "receiving_half_turn", "position_cm_cdm"],
+      "trains": ["technical", "cognitive"],
+      "age_min": "U12",
+      "intensity": "medium",
+      "players": { "min": 1, "ideal": 2, "max": 3, "note": "Player plus a passer (coach or partner)" },
+      "needs_partner": true,
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["mannequins"],
+      "space": { "length_m": 20, "width_m": 15, "scalable": true },
+      "duration": { "min": 8, "default": 12, "max": 15 },
+      "work_rest": "4 sets x 8 reps each side, 45 s rest",
+      "description": "The player receives in the middle from a passer. Just before the pass, the partner points to one of four coloured cone gates behind the player. The player must scan, receive on the half-turn and dribble out through the called gate.",
+      "coaching_points": [
+        "Scan over both shoulders before the ball arrives",
+        "Open the hips and receive across the body with the back foot",
+        "First touch forward into space",
+        "Check your shoulder again while the ball is travelling"
+      ],
+      "progressions": ["Call the gate later", "Passive defender behind the player", "One-touch exit pass instead of a dribble"],
+      "regressions": ["Call the gate earlier", "Only two gates", "Slower passes"],
+      "attribution": {
+        "inspired_by": "Scanning exercises common in modern academy coaching, informed by research on elite midfielders' visual exploration (e.g. Geir Jordet's studies)",
+        "level": "general"
+      }
+    },
+    {
+      "id": "wall_first_touch",
+      "name": "Wall Passing & First Touch",
+      "modes": ["individual"],
+      "phases": ["warm_up", "main"],
+      "focus": ["first_touch", "passing", "technique", "receiving_half_turn"],
+      "trains": ["technical"],
+      "age_min": "U10",
+      "intensity": "medium",
+      "players": { "min": 1, "ideal": 1, "max": 3 },
+      "equipment": ["balls", "rebound_wall"],
+      "equipment_optional": ["cones"],
+      "space": { "length_m": 10, "width_m": 10, "scalable": true },
+      "duration": { "min": 8, "default": 12, "max": 20 },
+      "work_rest": "5 x 90 s blocks, 30 s rest",
+      "description": "Varied passing against a wall or rebounder: two-touch inside foot, one-touch, receive on the back foot and turn through a cone gate, then thigh and chest control from lofted rebounds. Both feet.",
+      "coaching_points": [
+        "Cushion the ball: soft ankle on receiving",
+        "Set the ball up for the next action with your first touch",
+        "Strike through the middle of the ball for clean passes"
+      ],
+      "progressions": ["Increase distance and pass speed", "Weaker foot only", "Shoulder check before each touch"],
+      "regressions": ["Closer to the wall", "Allow extra touches"],
+      "attribution": {
+        "inspired_by": "Wall-passing repetition, a classic way for players to train touch and passing alone",
+        "level": "general"
+      }
+    },
+    {
+      "id": "passing_gates_both_feet",
+      "name": "Receive & Pass Through Gates (Both Feet)",
+      "modes": ["individual"],
+      "phases": ["main"],
+      "focus": ["passing", "first_touch", "technique"],
+      "trains": ["technical"],
+      "age_min": "U10",
+      "intensity": "low",
+      "players": { "min": 1, "ideal": 2, "max": 3, "note": "Partner or coach passes in" },
+      "needs_partner": true,
+      "equipment": ["balls", "cones"],
+      "space": { "length_m": 20, "width_m": 15, "scalable": true },
+      "duration": { "min": 8, "default": 10, "max": 15 },
+      "work_rest": "3 sets x 10 reps, 45 s rest",
+      "description": "The partner passes in. The player takes a directional first touch out of a cone, then passes through a small gate 10-20 m away with the other foot. Switch sides each set.",
+      "coaching_points": [
+        "Directional first touch sets up the pass",
+        "Standing foot pointing at the target",
+        "Lock the ankle and follow through"
+      ],
+      "progressions": ["Smaller gates", "Longer distance", "One-touch pass"],
+      "regressions": ["Bigger gates", "Shorter distance"],
+      "attribution": {
+        "inspired_by": "Receiving and passing accuracy exercise of a type used in youth coaching everywhere",
+        "level": "general"
+      }
+    },
+    {
+      "id": "finishing_reps_individual",
+      "name": "Finishing Reps: Types & Angles",
+      "modes": ["individual"],
+      "phases": ["main"],
+      "focus": ["finishing", "position_striker", "position_winger"],
+      "trains": ["technical"],
+      "age_min": "U10",
+      "intensity": "medium",
+      "players": { "min": 1, "ideal": 2, "max": 4, "note": "Works alone with self-feeds; better with a server or goalkeeper" },
+      "equipment": ["balls", "cones", "full_goals"],
+      "equipment_optional": ["mannequins"],
+      "space": { "length_m": 25, "width_m": 30, "scalable": true },
+      "duration": { "min": 10, "default": 15, "max": 20 },
+      "work_rest": "4 series x 6 shots, 1 min rest",
+      "description": "A series of finishing types from different angles: dribble and place it low into the far corner; cut inside onto the stronger foot and finish; first-time finish from a pass or self-feed; volley from a self-feed. Collect balls between series.",
+      "coaching_points": [
+        "Placement over power",
+        "Look at the goal before the ball arrives",
+        "Body over the ball to keep shots low",
+        "Follow every shot in for the rebound"
+      ],
+      "progressions": ["Time limit per shot", "Weaker foot series", "Mannequin as a defender to finish around"],
+      "regressions": ["Closer to goal", "Stationary ball"],
+      "attribution": {
+        "inspired_by": "Repetition finishing practised by forwards at every level, with the focus on placement and finishing from different angles",
+        "level": "general"
+      }
+    },
+    {
+      "id": "dribble_moves_1v1",
+      "name": "1v1 Moves at Game Speed",
+      "modes": ["individual", "team"],
+      "phases": ["main"],
+      "focus": ["dribbling", "1v1", "ball_mastery", "position_winger"],
+      "trains": ["technical"],
+      "age_min": "U10",
+      "intensity": "medium",
+      "players": { "min": 1, "ideal": 1, "max": 16, "parallel_groups": true },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["mannequins"],
+      "space": { "length_m": 25, "width_m": 15, "scalable": true },
+      "duration": { "min": 10, "default": 12, "max": 18 },
+      "work_rest": "4 sets x 6 reps, 45 s rest",
+      "description": "Dribble at a cone or mannequin 'defender', perform a move at about 1.5-2 m distance (step-over, scissors, body feint, Cruyff turn, La Croqueta), then accelerate away through a gate. One move per set, then free choice.",
+      "coaching_points": [
+        "Attack the defender at speed",
+        "Do the move at the right distance, not too early",
+        "Explode out of the move: the acceleration beats the defender",
+        "Use both directions"
+      ],
+      "progressions": ["Partner as a passive then active defender", "Finish on goal after the move"],
+      "regressions": ["Walking pace first", "Only one move"],
+      "attribution": {
+        "inspired_by": "Move training in the style of Coerver Coaching; moves like the Cruyff turn and La Croqueta are named after or associated with the players who made them famous",
+        "level": "general"
+      }
+    },
+    {
+      "id": "reactive_agility_colours",
+      "name": "Reactive Agility: Colour Calls",
+      "modes": ["individual", "team"],
+      "phases": ["warm_up", "main"],
+      "focus": ["agility", "scanning", "coordination"],
+      "trains": ["physical", "cognitive"],
+      "age_min": "U10",
+      "intensity": "high",
+      "players": { "min": 1, "ideal": 2, "max": 16, "parallel_groups": true, "note": "Needs someone to call the colours" },
+      "needs_partner": true,
+      "equipment": ["cones"],
+      "equipment_optional": ["balls"],
+      "space": { "length_m": 10, "width_m": 10, "scalable": true },
+      "duration": { "min": 6, "default": 10, "max": 12 },
+      "work_rest": "5-8 s work, 30-40 s rest, 8-10 reps",
+      "description": "The player stands in the middle of a square of four coloured cones. The partner calls a colour or points, and the player sprints to touch that cone and returns to the middle. Progress by doing it with a ball.",
+      "coaching_points": [
+        "Low centre of gravity, quick first step",
+        "React to the call, don't guess",
+        "Short steps when changing direction"
+      ],
+      "progressions": ["Two colours in a row", "Dribble the ball to the cone", "Visual signal instead of a call"],
+      "regressions": ["Bigger square, slower pace", "Fewer colours"],
+      "attribution": {
+        "inspired_by": "Reactive (cue-based) agility drills, used in modern athletic development because they combine change of direction with decision-making",
+        "level": "general"
+      }
+    },
+    {
+      "id": "cdm_receive_and_switch",
+      "name": "Defensive Midfielder: Receive & Switch",
+      "modes": ["individual"],
+      "phases": ["main"],
+      "focus": ["position_cm_cdm", "receiving_half_turn", "scanning", "long_passing", "switching_play"],
+      "trains": ["technical", "tactical", "cognitive"],
+      "age_min": "U14",
+      "intensity": "medium",
+      "players": { "min": 1, "ideal": 3, "max": 4, "note": "Partner plays as centre-back; a second partner as the wide target is ideal" },
+      "needs_partner": true,
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["mannequins"],
+      "space": { "length_m": 35, "width_m": 40, "scalable": true },
+      "duration": { "min": 10, "default": 15, "max": 20 },
+      "work_rest": "4 sets x 6 reps, 1 min rest",
+      "description": "The partner (as a centre-back) plays into the defensive midfielder between two cones, with a mannequin or cone behind as a marker. The 6 scans, receives on the back foot with an open body and switches play with a driven pass to a target gate or wide player on the far side. If the partner shouts 'pressure', the 6 plays back to the centre-back and offers again.",
+      "coaching_points": [
+        "Scan before the pass: know where the pressure and the free side are",
+        "Open body shape so you can play forward or wide",
+        "Driven switch: low and firm, not floated",
+        "Move to a new angle after every pass"
+      ],
+      "progressions": ["Active defender behind the 6", "Switch must be first or second touch"],
+      "regressions": ["Shorter switch distance", "No 'pressure' call"],
+      "attribution": {
+        "inspired_by": "Position-specific receiving and switching work for a defensive midfielder (the '6'), reflecting how deep midfielders are used in possession-based teams",
+        "level": "general"
+      }
+    },
+    {
+      "id": "long_passing_driven",
+      "name": "Driven & Lofted Long Passing",
+      "modes": ["individual"],
+      "phases": ["main"],
+      "focus": ["long_passing", "passing", "position_cm_cdm", "position_cb", "position_fullback"],
+      "trains": ["technical"],
+      "age_min": "U14",
+      "intensity": "low",
+      "players": { "min": 1, "ideal": 2, "max": 4, "note": "Alone: hit to a target zone and collect; with a partner: pass to each other" },
+      "equipment": ["balls", "cones"],
+      "space": { "length_m": 40, "width_m": 30, "scalable": false },
+      "duration": { "min": 10, "default": 12, "max": 15 },
+      "work_rest": "4 sets x 8 passes (alternate feet), 1 min rest",
+      "description": "Driven and lofted passes into a 5x5 m target zone 25-40 m away, using both feet. Alternate driven passes (low and firm) with lofted passes (dropping into the zone).",
+      "coaching_points": [
+        "Approach at a slight angle",
+        "Standing foot beside the ball; lean slightly back for lofted, over the ball for driven",
+        "Strike through the middle (driven) or lower half (lofted) of the ball",
+        "Follow through towards the target"
+      ],
+      "progressions": ["Smaller target zone", "Receive and play long within two touches"],
+      "regressions": ["Shorter distance", "Bigger target zone"],
+      "attribution": {
+        "inspired_by": "Classic long-passing technique work used by defenders and midfielders at every level",
+        "level": "general"
+      }
+    },
+    {
+      "id": "individual_challenge_course",
+      "name": "Timed Skill Challenge Course",
+      "modes": ["individual"],
+      "phases": ["game"],
+      "focus": ["dribbling", "ball_mastery", "agility", "finishing", "passing"],
+      "trains": ["technical", "physical"],
+      "age_min": "U10",
+      "intensity": "high",
+      "players": { "min": 1, "ideal": 1, "max": 16, "parallel_groups": true },
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["full_goals", "mini_goals"],
+      "space": { "length_m": 25, "width_m": 15, "scalable": true },
+      "duration": { "min": 8, "default": 10, "max": 15 },
+      "work_rest": "4-6 timed runs, 1 min rest between runs",
+      "description": "A timed course: slalom dribble through cones, turn at the end, pass through a gate, collect the ball and finish into a goal or gate. Beat your best time. Add 2 seconds for every cone touched or missed gate.",
+      "coaching_points": [
+        "Speed with control: penalties cost more than you gain",
+        "Small touches in the slalom, bigger touches in open space",
+        "Stay composed for the final pass and finish"
+      ],
+      "progressions": ["Weaker foot only", "Add a move before the finish"],
+      "regressions": ["Fewer cones", "Remove the finish"],
+      "attribution": {
+        "inspired_by": "Timed skill challenge to add competition and game speed to individual work",
+        "level": "general"
+      }
+    },
+    {
+      "id": "individual_1v1_game",
+      "name": "1v1 Gate Game",
+      "modes": ["individual"],
+      "phases": ["game"],
+      "focus": ["1v1", "dribbling", "defending", "finishing"],
+      "trains": ["technical", "physical", "tactical"],
+      "age_min": "U10",
+      "intensity": "high",
+      "players": { "min": 1, "ideal": 2, "max": 4, "note": "Against a partner or the coach" },
+      "needs_partner": true,
+      "equipment": ["balls", "cones"],
+      "equipment_optional": ["mini_goals", "full_goals"],
+      "space": { "length_m": 20, "width_m": 15, "scalable": true },
+      "duration": { "min": 8, "default": 12, "max": 15 },
+      "work_rest": "30-45 s rounds, 45 s rest, 8-10 rounds",
+      "description": "1v1 against a partner or coach. Score by dribbling through either of two gates on the opponent's end line (or into a mini goal). Swap attacker and defender each round.",
+      "coaching_points": [
+        "Attacker: change speed and direction to beat the defender",
+        "Defender: show one way, stay patient",
+        "React immediately when the ball changes hands"
+      ],
+      "progressions": ["Only one gate counts, called late by the coach", "Shorter rounds at maximum intensity"],
+      "regressions": ["Bigger area", "Defender at half speed"],
+      "attribution": {
+        "inspired_by": "1v1 duel games, a basic competitive format in youth and individual coaching",
+        "level": "general"
+      }
+    }
+  ]
+}
