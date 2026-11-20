@@ -30,6 +30,9 @@ PHASE_SHARE = {"warm_up": 0.20, "main": 0.50, "game": 0.20, "cool_down": 0.10}
 
 MIN_BLOCK_MINUTES = 4
 
+# Groq retires models from time to time; override with the GROQ_MODEL env variable.
+DEFAULT_MODEL = "openai/gpt-oss-120b"
+
 LLM = Callable[[list[dict]], str]  # takes chat messages, returns the reply text
 
 
@@ -217,7 +220,7 @@ def pretty(focus: list[str]) -> str:
 # Rule-based fallback (works without AI)
 # ---------------------------------------------------------------------------
 
-def fallback_plan(req: SessionRequest, shortlist: dict[str, list[Drill]]) -> SessionPlan:
+def fallback_plan(req: SessionRequest, shortlist: dict[str, list[Drill]], reason: Optional[str] = None) -> SessionPlan:
     targets = phase_targets(req.session_length)
     n_main = min(main_drill_count(req.session_length)[0], len(shortlist["main"]))
 
@@ -241,7 +244,9 @@ def fallback_plan(req: SessionRequest, shortlist: dict[str, list[Drill]]) -> Ses
         f"A {req.session_length}-minute {req.mode} session for {req.age_group.replace('_', ' ')} "
         f"focusing on {pretty(req.focus)}. Built from the drill library without AI."
     )
-    return finish_plan(blocks, req, title, summary, "fallback")
+    plan = finish_plan(blocks, req, title, summary, "fallback")
+    plan.fallback_reason = reason
+    return plan
 
 
 # ---------------------------------------------------------------------------
@@ -365,15 +370,20 @@ def groq_chat(messages: list[dict]) -> str:
     """Call Groq. Needs GROQ_API_KEY in the environment."""
     from groq import Groq  # imported here so tests don't need the key
 
-    client = Groq(api_key=os.environ["GROQ_API_KEY"], timeout=40)
+    client = Groq(api_key=os.environ["GROQ_API_KEY"], timeout=60)
+    model = os.environ.get("GROQ_MODEL") or DEFAULT_MODEL
+    extra = {}
+    if model.startswith("openai/gpt-oss"):
+        extra["reasoning_effort"] = "low"  # reasoning model: keep thinking short and fast
     response = client.chat.completions.create(
-        model=os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile"),
+        model=model,
         messages=messages,
         response_format={"type": "json_object"},
         temperature=0.4,
-        max_tokens=1500,
+        max_tokens=4000,  # room for reasoning + the JSON answer
+        **extra,
     )
-    return response.choices[0].message.content
+    return response.choices[0].message.content or ""
 
 
 # ---------------------------------------------------------------------------
@@ -386,21 +396,24 @@ def generate_session(req: SessionRequest, lib: DrillLibrary, llm: Optional[LLM] 
     if llm is None:
         if not os.environ.get("GROQ_API_KEY"):
             log.warning("GROQ_API_KEY not set - using rule-based fallback")
-            return fallback_plan(req, shortlist)
+            return fallback_plan(req, shortlist, "GROQ_API_KEY is not set on the server")
         llm = groq_chat
 
     messages = build_messages(req, shortlist)
+    reason = None
     for attempt in (1, 2):
         try:
             reply = llm(messages)
             return parse_ai_plan(reply, req, shortlist)
         except PlanError as e:
             log.warning("AI plan rejected (attempt %s): %s", attempt, e)
+            reason = f"AI plan rejected: {e}"
             messages = messages + [
                 {"role": "assistant", "content": reply},
                 {"role": "user", "content": f"That plan broke a rule: {e}. Return a corrected JSON plan."},
             ]
         except Exception as e:  # network error, rate limit, bad key...
             log.error("AI call failed (attempt %s): %s", attempt, e)
+            reason = f"AI call failed: {type(e).__name__}: {str(e)[:200]}"
             break
-    return fallback_plan(req, shortlist)
+    return fallback_plan(req, shortlist, reason)

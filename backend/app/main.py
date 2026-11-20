@@ -10,7 +10,7 @@ On Render:
 
 Environment variables (set in Render, never in code):
     GROQ_API_KEY   your Groq key (without it, the rule-based fallback is used)
-    GROQ_MODEL     optional, e.g. llama-3.3-70b-versatile
+    GROQ_MODEL     optional, defaults to openai/gpt-oss-120b
     APP_API_KEY    shared secret; the frontend must send it as the X-API-Key header
 """
 

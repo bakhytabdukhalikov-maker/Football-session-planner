@@ -165,6 +165,8 @@ if plan:
         st.write(plan["summary"])
     if plan["generated_by"] == "fallback":
         st.info("The AI wasn't available, so this plan was built directly from the drill library.")
+        if plan.get("fallback_reason"):
+            st.caption(f"Reason: {plan['fallback_reason']}")
 
     st.download_button(
         "📄 Download PDF", data=build_pdf(plan),

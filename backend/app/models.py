@@ -264,4 +264,5 @@ class SessionPlan(BaseModel):
     total_minutes: int
     focus: list[str]
     generated_by: Literal["ai", "fallback"]
+    fallback_reason: Optional[str] = None
     drills: list[SessionDrill]
