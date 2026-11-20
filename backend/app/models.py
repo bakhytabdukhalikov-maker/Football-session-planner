@@ -173,3 +173,95 @@ class Drill(BaseModel):
         if v is not None and v not in AGE_GROUPS:
             raise ValueError(f"unknown age group: {v}")
         return v
+
+
+# ---------------------------------------------------------------------------
+# API request / response models (stage 2)
+# ---------------------------------------------------------------------------
+
+POSITIONS = [f for f in FOCUS_AREAS if f.startswith("position_")]
+
+
+class SessionRequest(BaseModel):
+    mode: Literal["individual", "team"]
+    age_group: str
+    players: int = Field(default=1, ge=1, le=40)
+    session_length: int = Field(ge=30, le=120, description="Minutes")
+    focus: list[str] = Field(min_length=1, max_length=3)
+    equipment: list[str] = Field(default_factory=list)
+    space: Literal["small_area", "half_pitch", "full_pitch"]
+    position: Optional[str] = None
+    has_partner: bool = False
+
+    @field_validator("age_group")
+    @classmethod
+    def check_age(cls, v):
+        if v not in AGE_GROUPS:
+            raise ValueError(f"age_group must be one of {AGE_GROUPS}")
+        return v
+
+    @field_validator("focus")
+    @classmethod
+    def check_focus(cls, v):
+        bad = [f for f in v if f not in FOCUS_AREAS]
+        if bad:
+            raise ValueError(f"unknown focus area(s): {bad}")
+        return v
+
+    @field_validator("equipment")
+    @classmethod
+    def check_equipment(cls, v):
+        bad = [e for e in v if e not in EQUIPMENT]
+        if bad:
+            raise ValueError(f"unknown equipment: {bad}")
+        return v
+
+    @field_validator("position")
+    @classmethod
+    def check_position(cls, v):
+        if v is not None and v not in POSITIONS:
+            raise ValueError(f"position must be one of {POSITIONS}")
+        return v
+
+    @model_validator(mode="after")
+    def team_needs_players(self):
+        if self.mode == "team" and self.players < 4:
+            raise ValueError("team mode needs at least 4 players")
+        return self
+
+
+class SessionDrill(BaseModel):
+    """One block of the generated session. Facts come from the library;
+    only minutes, area, work_rest and adaptation_note are adapted."""
+
+    phase: Literal["warm_up", "main", "game", "cool_down"]
+    drill_id: str
+    name: str
+    minutes: int
+    area: str
+    players_setup: str
+    work_rest: str
+    adaptation_note: str
+    equipment: list[str]
+    description: str
+    coaching_points: list[str]
+    progressions: list[str]
+    regressions: list[str]
+    trains: list[str]
+    focus: list[str]
+    inspired_by: str
+    attribution_level: Literal["general", "documented"]
+    reference: Optional[str] = None
+
+
+class SessionPlan(BaseModel):
+    title: str
+    summary: str
+    mode: str
+    age_group: str
+    players: int
+    session_length: int
+    total_minutes: int
+    focus: list[str]
+    generated_by: Literal["ai", "fallback"]
+    drills: list[SessionDrill]
